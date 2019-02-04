@@ -143,13 +143,15 @@ html, body {
 }
 
 .line {
-  height:20px;
+/*  height:20px;*/
+  padding-bottom: 20px;
   width:1px;
   -webkit-animation: increase 3s;
   -moz-animation:    increase 3s; 
   -o-animation:      increase 3s; 
   animation:         increase 3s; 
   animation-fill-mode: forwards;
+  border: 0px;
 }
 
 .line p {
@@ -335,4 +337,37 @@ img.mfp-img {
 
 .contact p img {
   height: 20px;
+}
+
+@media(max-width:768px) {
+  .main-jumbotron {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .main-jumbotron .row.h-100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .skills {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  
+  .skill-set{
+    padding-right: 20px;
+  }
+  
+  .skill-set .d-flex p {
+    display: none;
+  }
+  
+  .mt-50 {
+    margin-top: 30px;
+  }
+  
+  .contact .col {
+    margin-bottom: 55px;
+  }
 }
